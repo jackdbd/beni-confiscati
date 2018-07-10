@@ -6,6 +6,8 @@ Exploratory data analysis and visualization of a small geospatial dataset.
 
 See the final result [here](http://madly-copy.surge.sh/).
 
+![An image showing a map of Tuscany created with Folium](https://github.com/jackdbd/beni-confiscati/blob/master/folium-map.png "The map created with Folium.")
+
 
 ## Data
 
