@@ -4,6 +4,8 @@
 
 Exploratory data analysis and visualization of a small geospatial dataset.
 
+See the final result [here](http://madly-copy.surge.sh/).
+
 
 ## Data
 
@@ -12,9 +14,13 @@ Source: Regione Toscana – [Beni confiscati alla criminalità organizzata](http
 The dataset is released under the [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) license.
 
 
+## Run the notebook with Binder
+[Binder](https://github.com/jupyterhub/binderhub) builds a docker image from a git repository + commit, so you can run the notebook `beni-confiscati.ipynb` in the cloud, without installing anything on your machine.
+
+
 ## Installation
 
-The best way to install all the dependencies for this notebook is to create a conda environment. You can use either [Miniconda](https://conda.io/miniconda.html) or [Anaconda](https://repo.continuum.io/).
+If you want to run the notebook locally, you need to create a conda environment. You can use either [Miniconda](https://conda.io/miniconda.html) or [Anaconda](https://repo.continuum.io/).
 
 Create and activate a new conda environment:
 
@@ -31,8 +37,14 @@ conda install -c conda-forge jupyter numpy pandas geopandas pyproj shapely carto
 
 If you run into issues when importing `fiona`, try downgrading it to `1.7.9`:
 
-```
+```shell
 conda install -c conda-forge fiona=1.7.9
+```
+
+When all dependencies have been installed, tun the notebook:
+
+```shell
+jupyter notebook
 ```
 
 
