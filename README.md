@@ -4,9 +4,17 @@
 
 Exploratory data analysis and visualization of a small geospatial dataset.
 
-See the final result [here](http://madly-copy.surge.sh/).
+Explore the [interactive map](https://jackdbd.github.io/beni-confiscati/).
 
 ![An image showing a map of Tuscany created with Folium](https://raw.githubusercontent.com/jackdbd/beni-confiscati/master/screenshots/folium-map.png "The map created with Folium.")
+
+Built with:
+
+- Geopandas
+- Shapely
+- PyProj
+- Cartopy
+- Folium
 
 
 ## Data
@@ -22,7 +30,7 @@ The dataset is released under the [CC BY-SA 4.0](https://creativecommons.org/lic
 
 ## Installation
 
-If you want to run the notebook locally, you need to create a conda environment. You can use either [Miniconda](https://conda.io/miniconda.html) or [Anaconda](https://repo.continuum.io/).
+If you want to run the notebook locally, you need to create a conda environment. You can obtain the conda package manager by installing a Python distribution like [Miniconda](https://conda.io/miniconda.html) or [Anaconda](https://repo.continuum.io/).
 
 Create and activate a new conda environment:
 
@@ -43,11 +51,13 @@ If you run into issues when importing `fiona`, try downgrading it to `1.7.9`:
 conda install -c conda-forge fiona=1.7.9
 ```
 
-When all dependencies have been installed, tun the notebook:
+When all dependencies have been installed, run the notebook:
 
 ```shell
 jupyter notebook
 ```
+
+*Note:* I decided to included the dataset in the repository, so you don't have to go find it by yourself. After all it is just ~200KB.
 
 
 ## Other
